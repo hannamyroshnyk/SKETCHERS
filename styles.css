@@ -1,0 +1,54 @@
+p.text:not(:empty) {
+  color:grey;
+}
+p.text:empty::after {
+  content: attr(title);
+}
+#some_id::after {
+  content: '123';
+  color:red;
+}
+p.main_link::first-line {
+  color: green;
+}
+p.main_link {
+  text-decoration: underline;
+}
+.main_link {
+  color:red;
+  text-decoration: none;
+}
+.main_link:hover {
+  color:blue;
+  text-decoration: underline;
+  text-decoration-color: red;
+  cursor: pointer;
+} 
+.main_link:active {
+  text-decoration: underline;
+}
+.main_link:visited {
+  color:grey;
+}
+input{color:blue} 
+input:focus {color:red}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #2980b9;
+  height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+}
